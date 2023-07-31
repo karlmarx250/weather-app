@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #fff;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    min-height: 100vh;
+    width: 90vw;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+
+.container__search {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    text-transform: uppercase;
+    padding: 0.5rem;
+    font-weight: bold;
+    background: rgb(48, 45, 45);
+    border: none;
+    border-radius: 9.5px;
+    color: white;
+    margin-top: 1rem;
+    margin-left: 10px;
+    cursor: pointer;
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+}
+
+.btn:hover{
+    border: 2px solid red;
+}
+
+.location {
+    padding: 0.3rem;
+    background: rgb(212, 212, 212);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    margin-top: 1rem;
+    width: 90vw;
+    max-width: 500px;
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+}
+
+.buttons {
+    text-align: center;
+    visibility: hidden;
+}
+
+.card {
+    border-radius: 1rem;
+    background: rgb(12, 16, 255);
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+    display: grid;
+    place-items: center;
+    padding: 1rem;
+    color: white;
+    font-weight: bold;
+}
+
+.temp {
+    font-size: 3rem;
+}
+
+.weather {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem;
+    justify-content: center;
+}
+
+.description {
+    text-transform: capitalize;
+}
+
+h2 {
+    margin-bottom: 1rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.deg {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    border: 2px solid black;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.25rem;
+}
+
+.deg:hover {
+    border: 2px solid red;
+}
+
+.active {
+    border: 2px solid white;
+    background: black;
+    color: white;
+}
+
+.visible {
+    visibility: visible;
+}
+
+.current {
+    background: rgb(156, 156, 156);
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+    color: white;
+    font-weight: bold;
+    display: grid;
+    place-items: center;
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 90vw;
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+}
+
+.city {
+    font-size: 1.5rem;
+}
+
+::-webkit-input-placeholder {
+    color: white;
+}
+
+::-moz-placeholder {
+    color: white;
+}
+
+:-ms-input-placeholder {
+    color: white;
+}
+
+::-ms-input-placeholder {
+    color: white;
+}
+
+::placeholder {
+    color: white;
+}
+
+.error {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    background: rgb(12, 16, 255);
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+}
